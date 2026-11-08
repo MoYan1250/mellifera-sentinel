@@ -1,5 +1,9 @@
 # Mellifera Sentinel
 
+<p align="center">
+  <img src="assets/logo.png" alt="Mellifera Sentinel" width="220">
+</p>
+
 A Discord honeypot with one job: if a member speaks in a channel you mark as a trap, the bot bans them and writes a staff log. It does not scan the rest of the server, and it does not guess whether a message looks like a scam.
 
 Discord 誘餌頻道機器人。只盯一個你指定的頻道。一般成員在裡面發言就封鎖，並在管理員頻道留下紀錄。
