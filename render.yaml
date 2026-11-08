@@ -1,0 +1,18 @@
+# Free Render web services sleep after about 15 minutes without inbound traffic.
+# That drops the Discord gateway. Prefer a host that stays running, such as Wispbyte.
+services:
+  - type: web
+    name: mellifera-sentinel
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: TRAP_CHANNEL_ID
+        sync: false
+      - key: ADMIN_LOG_CHANNEL_ID
+        sync: false

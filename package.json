@@ -1,0 +1,23 @@
+{
+  "name": "mellifera_sentinel",
+  "version": "1.0.0",
+  "description": "Discord honeypot that bans members who speak in a trap channel",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoYan1250/mellifera-sentinel.git"
+  },
+  "author": "MoYan1250",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
